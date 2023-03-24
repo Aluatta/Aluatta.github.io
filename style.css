@@ -379,7 +379,7 @@ text-align: center;
         border: solid 1px #88f36484;
 }
 .--item3{
-        background-color: #c6ebf9aa;
+        background-color: #bce5f4aa;
         border: solid 1px  #b9ecff;
 }
 
@@ -600,14 +600,18 @@ header{
         display: none;
 }
 .læringsMateriale{
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        gap: 6px;
-        justify-items: center;
+        overflow-x: scroll;
         background-color: inherit;
-        margin-bottom: var(--spaceDefault);
-
+        margin-bottom: var(--spaceDefault); 
 }
+/* didn´t work without this (!!!) added extra container: div (Jarne will not like it :( ) */
+.touch-wrapper-helper {
+        width: 100%;   
+        white-space: nowrap;
+}   
+
+
+
 .introduction{
         display: grid;
         grid-template-columns: 1fr;
@@ -618,7 +622,10 @@ header{
 .semesterIkon{
         max-width: 100%;
         border-radius: 6px;
+    
 }
+
+
 
 .--pMobile{
         display: contents;
@@ -626,7 +633,7 @@ header{
      
 }
 
-/*    doubling */
+/*    doubling    when worjing on combine two versions */
 .semesterSecond{
         max-width: 100vw;
         align-self: center;   
