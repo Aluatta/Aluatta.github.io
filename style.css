@@ -17,9 +17,11 @@
        --fontMMDFisrtPage:5.8rem;
        --fontMMDSecondPage: 5.2rem;
        --fontBody:1.1rem;
+       --fontMobileBody:1.1rem;
        --fontHeaderPSignature:52px;
        --fontMedium:calc(var(--fontDefault)*2);
        --fontMini: calc(var(--fontDefault)/2);
+     
        
 
     
@@ -276,9 +278,6 @@ text-align: center;
 
 /* still site1 still site1 still site1 still site1 /
 /** attention-attnention!!! site doubling semester2 gallery!!!!!  */
-
-
-
 
 /** animated text multimediedesign source: trully mitttal , code pen */
 @keyframes multimedia {
@@ -579,7 +578,7 @@ header{
 }
 
 .--PageFirst{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 1.5rem;
         margin-top: 6rem;
         text-align: center;
@@ -622,6 +621,7 @@ header{
 .semesterIkon{
         max-width: 100%;
         border-radius: 6px;
+       margin-right: 2rem;
     
 }
 
@@ -633,24 +633,41 @@ header{
      
 }
 
-/*    doubling    when worjing on combine two versions */
+
+/*    doubling    when worikng on combining two versions */
+
+.headerStudyCourse{
+        font-size: var(--fontMobileBody);
+        text-align: center;
+        font-weight: 100;
+
+}
 .semesterSecond{
         max-width: 100vw;
         align-self: center;   
 
         }
-.text.--mmd{
+
+/* testing version without this MMD on mobile - better?*/
+/*.text.--mmd{
         font-size: 2rem;
         text-align: center;
+      
+}*/
+
+
+.--mmdmobile{
+        display: none;
 }
-.headerStudyCourse{
-        font-size: var(--fontDefault);
-        text-align: center;
-        font-weight: 300;
-}
+
 .semesterIndication{
         margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: var(--fontMobileBody);
+        font-weight: 100;
+        color:#4E4E4E;
+
+       
 }
 
 
