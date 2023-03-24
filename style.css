@@ -321,18 +321,7 @@ text-align: center;
         filter: blur(32px);
       }
       
-
-
-
-
-
-
-
-
-
-
-
-/** esnds animated text multimediedesign ends animated text multimediedesign ends animated text multimediedesign ends  */
+/** ends animated text multimediedesign ends animated text multimediedesign ends animated text multimediedesign ends  */
 
 
 /**  site2 site2 site2 site2 site2 site2 site2 */
@@ -742,11 +731,15 @@ font-size: 1rem;
 }
 .itemC1{
         border-radius: 15px;
+        background: linear-gradient(90deg, rgba(224,224,223,1) 0%, rgba(245,244,241,0.5494353991596639) 15%, rgba(250,249,245,1) 80%, rgba(223,223,222,1) 99%);
+        
       
 }
 .itemC2{
 grid-area: 1/1/2/-1;
 border-radius: 15px;
+background: linear-gradient(90deg, rgba(224,224,223,1) 0%, rgba(245,244,241,0.5494353991596639) 15%, rgba(250,249,245,1) 80%, rgba(223,223,222,1) 99%);
+
 
 }
 
