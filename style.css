@@ -16,7 +16,7 @@
        --fontMMD: 5rem;
        --fontMMDFisrtPage:5.8rem;
        --fontMMDSecondPage: 5.2rem;
-       --fontBody:1.1rem;
+       --fontBody:1.2rem;
        --fontMobileBody:1.1rem;
        --fontHeaderPSignature:52px;
        --fontMedium:calc(var(--fontDefault)*2);
@@ -28,6 +28,12 @@
 
         /** colors colors colors colors colors colors */
         --ModulOverskriftColorFont:#4E4E4E;
+        --colorBoxGolden: #fcf0b7; 
+        --colorBoxSky:#bce5f4;
+        --colorBoxGrass: #36c6063d; 
+        --colorBoxDarling:rgba(255, 192, 203, 0.762);
+        --colorBoxNeutral:rgba(211, 211, 211, 0.872);
+        --colorBoxIntense:rgba(252, 107, 107, 0.667);
 
 }
 
@@ -65,18 +71,11 @@ ul,li {
 ul{
         padding-left: 0;
 }
+
 .navbar{
-  padding-top: var(--spaceDefault);
-  padding-right: var(--spaceMedium);
- 
-
-  
-
+        padding-top: 4px;
 }
-a{
-        text-decoration: none;
-        color: #222;   
-}
+
 .navbar__list{
         display: flex;
         flex-direction: row;
@@ -84,7 +83,10 @@ a{
         display: inline-block;
 
 }
-
+a{
+        text-decoration: none;
+        color: #222;   
+}
 .--item{
   font-family: 'Nunito Sans', sans-serif;
   padding-left: var(--spaceXXSmal);
@@ -105,7 +107,6 @@ border-left: #fa911a solid 1px;
         display: none;
 }
 
-/* front-page front-page  front-page  front-page  front-page */ 
 
 header{
         margin-bottom: var(--spaceSmall);
@@ -113,9 +114,16 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      
+        position: fixed;
+        z-index: 1001;
+        top:0;
+        width: 100%;
+       background: linear-gradient(90deg, rgba(238,238,237,1) 6%, rgba(253,253,252,1) 12%, rgba(253,253,252,1) 21%, rgba(253,253,252,1) 80%, rgba(253,253,252,1) 86%, rgba(238,238,237,1) 94%);
+    
 }
 .--headerP{
-        margin-top: var(--spaceDefault);
+        margin-top:4px;
         margin-bottom: 0;
         text-align:left;
         font-family: 'Babylonica', cursive;
@@ -128,6 +136,7 @@ header{
        
 }
 
+/* front-page front-page  front-page  front-page  front-page */ 
 .--lportfolio{
        margin-top: 0;
        text-align:left;
@@ -162,6 +171,7 @@ header{
         margin-bottom: var(--spaceXXSmal);
         margin-top: 0; 
         padding: var(--spaceDefault);
+        font-size: var(--fontBody);
 
 }
 
@@ -171,6 +181,8 @@ header{
         flex-direction: column;
         max-width: 70vw;
         align-self: center;
+        margin-top: 5rem;
+   
 
 }
 
@@ -183,13 +195,14 @@ header{
         background-image: url(images/mmd-pic.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
-         background-position: center;
+        background-position: center;
+
+       
+
 }
 
 
 /** site1:section 4semseters ikons---site1:section 4semseters ikons */
-
-
 .læringsMateriale{
 display: flex;
 flex-direction: row;
@@ -200,6 +213,7 @@ padding-top: var(--spaceDefault);
 padding-bottom: var(--spaceDefault);
 border-radius: 10px;
 }
+
 
 .semester{
         width: 22vh;
@@ -226,7 +240,7 @@ border-radius: 10px;
 
 .headerStudyCourse{
         margin-bottom: .75rem;
-        font-size:1.5rem;
+        font-size:var(--fontBody);
         font-weight: 300;
 
 }
@@ -370,7 +384,7 @@ text-align: center;
 }
 
 .--item1{
-        background-color: #f3bf58bd;
+        background-color: #f3bf589d;
         border: solid 1px #f6ba42;
 } 
 .--item2{
@@ -557,8 +571,7 @@ header{
         width: 100%;
         padding-left: 1.6rem;
         padding-right: .75rem;
-        background-color: rgb(71, 70, 70);
-        background: rgb(250,249,245); 
+       
     
 
 }
@@ -580,7 +593,6 @@ header{
 .--PageFirst{
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
-        margin-top: 6rem;
         text-align: center;
 }
 
@@ -604,12 +616,10 @@ header{
         margin-bottom: var(--spaceDefault); 
 }
 /* didn´t work without this (!!!) added extra container: div (Jarne will not like it :( ) */
-.touch-wrapper-helper {
+.touchWrapperHelper {
         width: 100%;   
         white-space: nowrap;
 }   
-
-
 
 .introduction{
         display: grid;
@@ -675,9 +685,10 @@ header{
 
 
 
-/** 2222222222222222*/
+/** Mobile 2222222222222222*/
 .mainContent{
         max-width: 100vw;
+     
 
 }
 .--mmd2{
@@ -709,9 +720,8 @@ header{
         font-weight: 200;
 }
 
-/** 333333333333333333333333333333333333333333333333333333333333333333 */
+/**Mobile 333333333333333333333333333333333333333333333333333333333333333333 */
 .modul1{
-        margin-top: 6rem;
         font-size: 2.2rem;
         text-shadow:none;
 }
@@ -755,14 +765,19 @@ font-size: 1rem;
 }
 .itemC1{
         border-radius: 15px;
+        padding-top: 8px;
         background: linear-gradient(90deg, rgba(224,224,223,1) 0%, rgba(245,244,241,0.5494353991596639) 15%, rgba(250,249,245,1) 80%, rgba(223,223,222,1) 99%);
-        
-      
+        background: #d5f5ff;
+        background-color: #bce5f4aa;
+        background: linear-gradient(90deg, rgba(188,229,244,0.566843925070028) 20%, rgba(188,229,244,0.5444349614845938) 40%, rgba(188,229,244,0.75171787464986) 58%, rgba(188,229,244,0.9197851015406162) 79%);
+
 }
 .itemC2{
 grid-area: 1/1/2/-1;
 border-radius: 15px;
-background: linear-gradient(90deg, rgba(224,224,223,1) 0%, rgba(245,244,241,0.5494353991596639) 15%, rgba(250,249,245,1) 80%, rgba(223,223,222,1) 99%);
+padding-top: 8px;
+/*background: linear-gradient(90deg, rgba(224,224,223,1) 0%, rgba(245,244,241,0.5494353991596639) 15%, rgba(250,249,245,1) 80%, rgba(223,223,222,1) 99%);*/
+background: linear-gradient(90deg, rgba(252,240,183,1) 0%, rgba(252,240,183,0.7643229166666666) 45%, rgba(252,240,183,0.47020526960784315) 72%);
 
 
 }
