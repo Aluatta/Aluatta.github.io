@@ -618,6 +618,10 @@ gap:16px;
 
 
 /** designSite  designSite  designSite designSite */
+.introductionBoxText{
+
+        
+}
 .--uiux.--citat{
 margin-bottom: 0;
 }
@@ -629,12 +633,17 @@ margin-bottom: 0;
         text-align: right;
 }
 .designSystemBox{
-        display: flex;
-        flex-direction: row;
-        gap:var(--spaceDefault);
+       display: grid;
+       grid-template-columns:1fr 1fr 1fr ;
+       gap: 1.2rem;
+   
 }
 .designSystem{
         font: var(--fontBody);
+        background-color: #4E4E4E;
+        color: whitesmoke;
+        
+
 }
 
 
