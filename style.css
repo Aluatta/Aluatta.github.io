@@ -294,7 +294,10 @@ border-radius: 10px;
       
 .--mmd{
 text-align: center;
+
+
 }
+
 
 /* still site1 still site1 still site1 still site1 /
 /** attention-attnention!!! site doubling semester2 gallery!!!!!  */
@@ -339,11 +342,20 @@ text-align: center;
         animation: multimedia 2s linear infinite alternate;
         filter: blur(32px);
       }
+
+
+/** Switched off  heading animation  */
+      .--mmd.--uiux{
+    animation: none;
+      }
       
+
+
+
+
+
 /** ends animated text multimediedesign ends animated text multimediedesign ends animated text multimediedesign ends  */
 
-
-/**  site2 site2 site2 site2 site2 site2 site2 */
 .--mmd2{
         font-size: var(--fontMMDSecondPage);
         text-align: center;
@@ -623,17 +635,11 @@ gap:16px;
 margin-bottom: 0;
 }
 
-.authorUndeplaced{
-        margin-top: 0;
-        font-size: 1rem;
-        color:#4e4e4eb5;
-        text-align: right;
-}
 .designSystemBox{
        display: grid;
        grid-template-columns:1fr 1fr 1fr ;
        gap: 1.2rem;
-   
+       margin-bottom:var(--spaceLarge);
 }
 .designSystem{
         font: var(--fontBody);
@@ -642,264 +648,112 @@ margin-bottom: 0;
         padding: .75rem;
         border-radius: 16px;
         text-align: center;   
-       
+}
+.slidersHeading{
+        font-size: var(--fontBody);
+}
+.sliderWrapper{
+        position: relative;
+        display: grid;
+        grid-template-rows: auto;
+        overflow-x: scroll; 
+        scroll-behavior: smooth;   
+        margin-bottom: var(--spaceXLarge);
+}
 
+.sliderWindow{
+        justify-items: center;
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        grid-auto-flow:column;
+        overflow-x:auto;
+
+}
+.slide{text-align: center;
+        position: relative;
+        font-size: .9rem;
+        width:90vw;
+        border-radius: 16px;
+        border: solid 1px var(--colorFontBody);
+        max-width: 69vw;
+        display: grid;
+       grid-template-columns: auto;
+      /* background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #efeeee 26%, #efefef 48%, #d9d9d9 75%, #d7d5d5 100%);  */
+     
      
 
+     
 }
-.designSystem:hover{
-      background-color: whitesmoke;
-      color: var(--colorFontBody);
-        border: solid 1px #4E4E4E;
+.headingItalic{
+        display: flex;
+        flex-direction: row;
+
 
 
 }
+.italicPBoxHeadingBox2DesignCRAP{
+line-height: 12%;
+padding-left: var(--spaceDefault);
+text-decoration: double  red;
 
-/** Experiment!!!!! */
-
-
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
+}
+.gestaltContainerPictures{
+     display: grid;
+     gap:var(--spaceDefault);
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     
+}
+.exepmle{
+        max-width: 70%;
 }
 
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
+.slideFirst{
+        background-image: linear-gradient(315deg, #fdeded 5%, #fbbfba 64%);
+   }
+   
+.slideSecond{
+        background-image: linear-gradient(147deg, #becef0 0%, #edf1f4 74%);
+   }
 
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
+.slideThird{
+           background-image: linear-gradient(315deg, #f4f2ed 5%, #fae5a0d3 64%);
+    
+   
+   }
+.slideFourth{
+           background-image: linear-gradient(147deg,#56b8609a  0%,  #d7f0db 74%);
+    
+         
+   }
 
-* {
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
-}
 
-*::-webkit-scrollbar {
-  width: 0;
-}
+.readMoreAbout:hover{
+        color: #fa911a;
+        font-weight: 900;
 
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
 
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
 
-* {
-  -ms-overflow-style: none;
 }
+.boxHeading{
+        margin-top: 0;
 
-ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
-
-.carousel {
-  position: relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
-}
-
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background-color: var(--colorBoxSky);
-  counter-increment: item;
-  border-radius: 16px;
-  border: solid 1px var(--colorFontBody);
-  padding: 1rem;
-  text-align: center;
-}
-
-.slidersHeading{
+.boxHeading::first-letter{
+        color: red;
         margin: 0;
-        font-size: 1.5rem;
-}
-.sliderContent{
-        padding-left: 2rem;
-        padding-right: 2rem;
-}
-.carousel__slide:before {
-/** no nbrs :) */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-40%,70px);
-  color: var(--colorFontBody);
-  font-size: 1.2rem;
-}
-
-.carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-}
-
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-  animation-name: none;
-}
-
-.carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color:var(--colorFontBody);
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 37.5%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
-}
-
-.carousel::before,
-.carousel__prev {
-  left: -1rem;
-}
-
-.carousel::after,
-.carousel__next {
-  right: -1rem;
-}
-
-.carousel::before,
-.carousel::after {
-  content: '';
-  z-index: 1;
-  background-color:var(--colorFontBody);
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none;
-}
-
-.carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
-}
-
-.carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-}
-
-#carousel__slide1{
-        background-color: var(--colorBoxDarling);
 
 }
-#carousel__slide2{
-        background-color: var(--colorBoxSky);
+.box{
+        border-radius: 16px ;
+        padding: var(--spaceSmall) var(--spaceMedium);
+        border: #4E4E4E solid 1px;
+        margin-bottom: 2rem;
+        background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(204, 205, 206) 100.2%);
 }
-#carousel__slide3{
-        background: var(--colorBoxGrass);
-}
-#carousel__slide4{
-        background: var(--colorBoxNeutral);
-}
+
+
+
 /** footer footer   */
 footer{
         color: rgb(71, 70, 70);
@@ -913,9 +767,6 @@ footer{
 }
 
 /** footer-ends  footer-ends  footer-ends  footer-ends */
-
-
-
 
 
 
@@ -1009,7 +860,7 @@ header{
 
 /* didn´t work without this (!!!) added extra container: div (Jarne will not like it :( ) */
 .touchWrapperHelper {
-        width: 100%;   
+        width: 100vw;   
         white-space: nowrap;
 
 }   
@@ -1073,8 +924,6 @@ header{
 }
 
 
-
-/** Mobile 2222222222222222*/
 .mainContent{
         max-width: 100vw;
      
@@ -1109,7 +958,8 @@ header{
         font-weight: 200;
 }
 
-/**Mobile 333333333333333333333333333333333333333333333333333333333333333333 */
+
+/**Mobil  UXUI UXUI 333333333333333333333333333333333333333333333333333333333333333333 */
 .modul1{
         font-size: 2.2rem;
         text-shadow:none;
@@ -1167,6 +1017,7 @@ border-radius: 15px;
 padding-top: 8px;
 /*background: linear-gradient(90deg, rgba(224,224,223,1) 0%, rgba(245,244,241,0.5494353991596639) 15%, rgba(250,249,245,1) 80%, rgba(223,223,222,1) 99%);*/
 background: linear-gradient(90deg, rgba(252,240,183,1) 0%, rgba(252,240,183,0.7643229166666666) 45%, rgba(252,240,183,0.47020526960784315) 72%);
+background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 
 
 }
@@ -1204,10 +1055,7 @@ overflow-x: scroll;
 }
 
 
-/**moobile-designSite */
-.carousel__navigation-button{
-        display: none;
-}
+/**  -->mobile-designSite   -->mobile-designSite   -->mobile-designSite  -->mobile-designSite   */
 
 .introHeadingModul{
         margin: 0;
@@ -1219,6 +1067,19 @@ overflow-x: scroll;
 .overskrift.--mmd.--uiux.--citat{
         margin: 0;
 }
+
+.slide{
+        max-width: 100%;
+        margin-bottom: var(--spaceDefault);
+      
+     
+
+}
+.box{
+        padding-left:8px;
+        padding-right: 8px;
+}
+
 /**  mp4Semester1 mp4Semester1mp4Semester1mp4Semester1mp4Semester1mp4Semester1 */
 #video{
        width: 300px;
