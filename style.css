@@ -221,11 +221,6 @@ border-radius: 10px;
 }
 
 
-.semester{
-        width: 22vh;
-        height: 62vh;
-        border: solid #222 1px;
-}
 
 .semesterIkon{
       border: #222 solid 1px;
@@ -855,7 +850,6 @@ header{
 
 /* didn´t work without this (!!!) added extra container: div (Jarne will not like it :( ) */
 .touchWrapperHelper {
-        width: 100vw;   
         white-space: nowrap;
 
 }   
