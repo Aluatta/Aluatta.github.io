@@ -217,11 +217,11 @@ background-color:#4E4E4E;
 padding-top: var(--spaceDefault);
 padding-bottom: var(--spaceDefault);
 border-radius: 10px;
+overflow-x: scroll;
+position: relative;
+
 
 }
-
-
-
 .semesterIkon{
       border: #222 solid 1px;
       border-radius: 6px;
