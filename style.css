@@ -228,8 +228,6 @@ border-radius: 10px;
 }
 
 .semesterIkon{
-      height: 9rem;
-      width: 9rem;
       border: #222 solid 1px;
       border-radius: 6px;
     
@@ -871,7 +869,7 @@ header{
 .semesterIkon{
         max-width: 100%;
         border-radius: 6px;
-       margin-right: 2rem;
+
     
 }
 
