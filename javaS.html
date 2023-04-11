@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+        <title>JavaScript</title>
+</head>
+<body>
+     
+
+        <header class="header --headerSecondSite" >
+                <section>
+                 <p class="text --headerP">julia lassen</p> 
+                 <h3 class="text --lportfolio" >læringsportfolio</h3>
+                </section>
+                <nav class="navbar">
+                        <ul class="navbar__list">
+                                <a href="index.html"> <li class="navbar__list --item" > Home</li></a>
+                                <a href="#">          <li class="navbar__list --item">Portfolio</li></a>
+                                <a href="#">          <li class="navbar__list --item">Contact</li></a>
+                        </ul>
+                </nav>
+        </header>
+
+        <section class="javaS"   >
+             
+                <h1 class="modul1" > JavaScript</h1>  
+                <p class="overskrift --mmd --uiux --jsTagline  ">Java is to JavaScript as ham is to hamster</p> 
+                <p></p>
+                <article  id="functionDefinition">
+                        <h2  >Function ( )</h2>
+                        <p>A function is a block of code that performs a specific task under a one name. You can divide this task in a small chunks and use these chunks when you need them. Function makes the code reusable. You can declare it once and use it multiple times. </p>
+                        <p> <strong> function´s statement/body</strong>: is written within { }, this is a set of instructions , small chuncks  </p>
+                        <p> <strong>function´s declaration</strong>: use 
+                              <strong> <em> function</em> </strong> keyword</p>
+                        <p> <strong>function´s expression</strong>: F.NAME( )</p>
+                        <p> <strong> f.parameters</strong>: we define them  inside ( ) when we declare function is like a placeholder til data, that defines what should be passed to this function.</p>
+                        <p> <strong>f.arguments</strong>: variables, that pass into parameters when function is called ( are passed to the function procedure); they are accessible only within this function.</p>
+
+                </article>
+                <section  class="functionsTypeField"  >
+                     
+                        <article  class="classicFuncctionsBox">
+                                        <h1>Functions types</h1>
+                                        <p>standard function</p>
+                                        <p>function without parameters </p>
+                                        <p>function expression without name</p>
+                                        <p>function expression with name</p>
+                                        <p> <em class="emsmall" >wyrazenie funkyjne tzn przpisanie do variable funkcji</em> </p>
+                        </article>
+        
+                        <div>
+                                        <p class="codepen" data-height="315" data-default-tab="js" data-slug-hash="xxaopML" data-user="aluata" style="height: 250px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                                <span>See the Pen <a href="https://codepen.io/aluata/pen/xxaopML">
+                                                functions types</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                                on <a href="https://codepen.io">CodePen</a>.</span>
+                                              </p>
+                                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+        
+                        <article class="arrowFunctionField"  >
+                                <h1>Arrow functions</h1>
+                                <p>ex.1</p>
+                                <p>ex.2</p>
+                                <p>ex.3 with one only parametr</p>
+                                <p>ex.x4without parametr</p>
+                              
+                        </article>
+                    
+                        <div><iframe height="315" style="width: 100%;" scrolling="no" title="Arrow functions" src="https://codepen.io/aluata/embed/preview/oNPrEQV?default-tab=js&theme-id=default" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                See the Pen <a href="https://codepen.io/aluata/pen/oNPrEQV">
+                                Arrow functions</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                on <a href="https://codepen.io">CodePen</a>.
+                              </iframe>
+                        </div>
+                </section>
+
+                <article  class="objectField">
+                        <h2 >Object { }</h2> 
+                        <p></p>
+                        <p> is like a container that can store multiple collections of data: properties (fx.strings, numbers) & methodes,  
+                        <p>it is     all within { } curly brackets; </p>
+                        <p>  is <strong>non-primitive data-type</strong> it means can contain multiple datas  </p>  
+                        <p>types: function, array, math, date, regular</p>
+                        <p>can contain another object or a function</p>
+                        <p> <strong>PROPERTIES</strong>: variable  in an object, consist of par <em> key : value, </em> </p>
+                        <p> <strong>object create</strong>  by using: 
+                                <ol>
+                                        <li class="List listOrdered " >object literal (good to create a single object)</li>
+                                        <li class="List listOrdered " >new Object() -  the sam e output as obj.literal, better use obj.literal</li>
+                                        <li class="List listOrdered " >contructor function (good to create a multiple object)</li>
+                                        <li class="List listOrdered " >classes (good to create a multiple object)</li>
+                                        <li class="List listOrdered   pWithBottomMargin" >object create ()</li>
+                                </ol>
+                        </p>
+                        <p>CodePen Examples: Functions, Objects, Variable, Methods</p>
+                        <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="html,result" data-slug-hash="KKGpvgm" data-preview="true" data-user="aluata" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/aluata/pen/KKGpvgm">
+                                Variable, Objects,Functions ,Methods.</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+                        <p><strong>ARRAY [ ]: </strong>special type of object coz can contain a mix of different data types fx:string with numbers and boolean
+                        <p> array's index starts with 0, not 1. -->  II array with mixed data types: const arrayOne = ['work', 'exercise', 1, true];</p>
+                        <img class="photo --arrayPic"  src="images/array.jpeg" alt="picture array exemple">
+                
+
+                        <h2>Method</h2>
+                        <ol  >
+                                <li class="List listOrdered " >to funkcja w obiekcie. Jest przypisana do tego obiektu jako jestgo wlasnosc  i wlasciwosc (properties),
+                                przetwarza jego dane i moze byc wywolana tylko wewnatrz swojego obiektu (is a function within an object, assigned to this object as its own , process object´s data and can be called within this object;) </li>
+                                <li class="List listOrdered "  >to akcja, którą można wykonywać na obiekcie </li>
+                                <li class="List listOrdered " > fx.: signature: function () {return this.name + " " + this.surname;}</li>
+                                <li class="List listOrdered " > different types of method: console (.log .error .warn .info .trace), document, date, math, window (.alert), history, form, frame</li>
+                        </ol>
+
+                        
+                
+                </article>
+                        
+
+                <article  class="variableField">
+                        <h2>Variable = </h2>
+                        <p>keyword name = value, </p>
+                        <p>it´s a container to hold a data; </p>
+                        <p>initialization starts when we assign value, until it happens we cannot use variable </p>
+                        <p>they are 2 ways to create a variable --> </p>
+                        <ul><li> <strong>let</strong> : you can assign it various values; block-scoped: variable can be sccessed only in the immediate block!  </li>
+                        <li>  <strong>const</strong> : one times vslue assigned to it will  indicate one & only object</li>
+                        <li>  <strong>var</strong> : similart to let, but old-school, replaced by  let  </li></ul>
+                        <p> <strong>undefined </strong> - variable has not assigned value </p>
+                        <p>  <strong>null</strong> - assigned 0; intended (bevidst) not assigned value to a variable </p>
+                        <p> To check if variable has assigned value use:</p>
+                        <p>console.log(typeof VARIABLENAME === "undefined");   // true /false</p>
+                        <p>console.log (VARIABLENAME === "undefined");  //true </p>
+                        <p>let, const, var - these are keywords</p>
+                        <p> <strong>scope</strong>: availbility of variables in a certain part of code </p>
+                        <p>  <strong>global scope:</strong> a variable declared at the top of a program or outside of a function , it means this variable can be used anywhere in the program: the value of a global variable can be changed inside a function ---->  <em> good practice: avoid using global variables because the value of a global variable can change in different areas in the program. It can introduce unknown results. </em> </p>
+                        <p><strong>local scope: </strong> a variable declared within a function,can only be accessed within the function! (not beyond the function) </p>
+                </article>
+                       
+                <article   class="datatypesField">
+                        <h2>Data types</h2>
+                        <p> <strong>string, number, boolean (true /false) ,undefined, null, symbol, object</strong>  --> all data except object are <strong>primitive data-type</strong>   it means can store only a single data;  fx: const age = 28,  ;   let greet = 'Say Hi',  let study : true, </p>
+        
+                </article>
+
+
+                <article class="eventlistenerField" > 
+                        <h2>Eventlistener</h2>
+                        <p>Event: is a methode</p>
+                        <p>we use it to attach an event to a particular element</p>
+                        <p>when event happens  fx  user interaction like a click , triggers a specific section of the code</p>
+                        <p>syntax: element.addEventListener (event, function, useCapture);useCapture is optional  </p>
+                        <p class="pWithBottomMargin" >List of eventListener: <a class="clickLink"  target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Events#event_listing"> <em > discover more </em> </a> </p>
+                     
+                        <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="js" data-slug-hash="jOvJEVM" data-preview="true" data-user="aluata" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/aluata/pen/jOvJEVM">
+                                EventListener 2 / Button</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                      
+                        
+                </article>
+
+                <article class="">
+                        <h2>Dom Queries </h2>
+                        <p>are the methodes that are called on the DOM to select/return one/more of elements  represented in the DOM query. the returrnered element is then free to be used by a programming language.</p>
+                        <p> querySelector lægge i vores RAM;  <strong>querySelector </strong> --> returnerrer en Node; <strong>querySelectorALL</strong>  --> returnerrer flere Nodes</p>
+                        <p>script need to be able to access the content of document and  to know when the user is interacting with it. This communication  is carried out     with help of methodes, events, propertires in the interface called DOM :) </p>
+                        <strong>DOM: Document Object Model</strong>
+                        <p> is a nodes tre-like representation of HTML Doc (markup-based resource) loded in browser.The DOM is an API for accessing and manipulating documents what allows  me to interact  with a website using js </p>
+                        <p>  DOM renders the page (HTML: text from editor) in the browser as a tree of objects  so that java script, can play with it.  In other words when the static assets  (HTML and CSS) are loaded  on the site - the DOM is created - and js sees the TREE! which allows js ( and any scripts) to run on that page manipulating not the HTML and CSS , but the <strong> browser’s interpretation</strong> of that information (the DOM)</p>
+                        <p>is representation of  whole HTML elements that make up web page (are loaded in browser)</p>
+                        <p>it´s a root element;</p>
+                        <p>with help of DOM we can add dynamic content to a webpage - we can access & change the content of doc. by its methodes (doc. is root element thet represents HTML doc.) </p>
+                        
+                        <figure class="photoBox" >
+                                <img class="photo" src="images/dom1a.jpeg" alt="dom tree ">
+                                <img class="photo photo2"   src="images/dom2.gif" alt="dom tree">
+                        </figure>
+                        <p class="pWithBottomMargin"><em>js widzi tak strukture elementów  html na  wczytanej stronie - oczami Javy S. ha ha! To, co sobie pisze tzn. tekst w HTMLu w edytorze , zostaje  nastepnie przedstawione w postaci modelu obiektowego pamieci komp.  czyli przegladarka  czyta sobie moj tekst i  odpowiednio przetwarza go na drzewko.</em></p>
+
+                     
+                        <table class="tbDOM pWithBottomMargin">
+                                <tr >
+                                   <thead >       
+                                        <th colspan="2" > DOM Properties</th>
+                                   </thead>
+                                </tr>
+                        
+                                <tbody>
+                                <tr>
+                                        <td align="right" >node value</td>
+                                        <td>--> if text nodes</td>
+                                </tr>
+                                <tr>
+                                        <td align="right" >text content</td>
+                                        <td>--> element nodes like fx.H1-H6, p,em; counter example</td>
+                                </tr>
+                                <tr>
+                                        <td align="right"  >inner HTML</td>
+                                        <td> -->on nodes elements too but not safe!</td>
+                                </tr>
+                                <tr  style="      background:rgba(0, 170, 255, 0.491);;">
+                                        <td align="right" > <STRong>DOM MANIPULATION</STRong>  </td>
+                                        <td><STRong>INNER HTML</STRong> </td>
+                                </tr>
+                                <tr>
+                                        <td align="right">create element</td>
+                                        <td>build up a string</td>
+                                </tr>
+                                <tr>
+                                        <td align="right" >create text node</td>
+                                        <td>contains mark up</td>
+                                </tr>
+                                <tr>
+                                        <td align="right" >appendChild()</td>
+                                        <td>updates elements</td>
+                                </tr>
+                                <tbody>
+                        </table>
+                        <p>How DOM works</p>
+                        <p class="codepen" data-height="180" data-theme-id="light" data-default-tab="js" data-slug-hash="yLRywEV" data-preview="true" data-user="aluata" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/aluata/pen/yLRywEV">
+                                Untitled</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                        <p><strong>NODE(S)</strong></p>
+                        <p>nodes participate in a DOM tree  and nodes tree is expressed as a relationship between a node and its potential children</p>
+                        <p>abstract class , objects</p>
+                        <p> some of the nodes in a tree can have children, while others are always leaves; </p>
+                        <p>Document, Element , DocumentType</p>
+                        <p><strong>NODES LIST:</strong></p>
+
+                        <ol>
+                                <li class="List listOrdered " >child node</li>
+                                <li class="List listOrdered " >first child </li>
+                                <li class="List listOrdered " >last child</li>
+                                <li class="List listOrdered " >parent node</li>
+                                <li class="List listOrdered " >next sibling</li>
+                                <li  class="List listOrdered " >previuos sibling</li>
+
+                        </ol>
+
+
+                        
+
+
+                        <p class="pWithBottomMargin">  <strong>.closest</strong> moves downwards, selects the closest parent element, that has this . selector ;   parent[0] this is the first parent</p>
+
+                        <p  >Various methodes to make DOM Query: 
+                                <a class="clickLink"  href="https://monsterjs.com/"> game</a>
+                                <p>-->getElementById("id") ; getElementsByTagName("tag-name"); getElementsByClassName("class-name") </p> 
+                                <ul>
+                                        <li><strong>-->querySelector ()</strong>: this method returns the first element within the document that matches the selector. It returns a single element.</li>
+                                        <li>  <strong> -->querySelectorALL ()</strong>: returns a nodelist thus the list of the document’s elements that match the given selector(s). Can return one or many selectors. </li>
+                                </ul>   </p>
+
+                                <section class="queryBoxComparison">
+                                        <iframe class="iFrameStyling"   height="200" style="width: 100%;" scrolling="no" title="querySelector" src="https://codepen.io/aluata/embed/preview/ZEqYdaB?default-tab=js&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                                See the Pen <a href="https://codepen.io/aluata/pen/ZEqYdaB">
+                                                querySelector</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                                on <a href="https://codepen.io">CodePen</a>.
+                                              </iframe>
+
+                                              <p>querySelect   <br> vs  <br> querySelectAll</p>
+
+                                              <iframe   class="iFrameStyling"    height="200" style="width: 100%;" scrolling="no" title="querySelectAll" src="https://codepen.io/aluata/embed/preview/JjmoQMp?default-tab=js&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                                See the Pen <a href="https://codepen.io/aluata/pen/JjmoQMp">
+                                                querySelectAll</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                                on <a href="https://codepen.io">CodePen</a>.
+                                              </iframe>
+                                            
+                                </section>
+                               
+                </article>
+
+
+                <article class=" conditionalStatementsField  pWithBottomMargin">  
+
+                        <h2>Conditional Statements</h2>
+                        <p>if -- else if --  else   => these conditi ons determine whether or not pieces of code run og action happens ;  happens if a specified condition is true</p>
+                        <p>returns: true ===  or false !==  </p>
+                        <p>&&   all conditions  must meet</p>
+                        <p>II one condition is enough to statement work</p>
+                        <p class="pWithXSmallMArgin" > if-else if  -->  if there are few statements , only one blok will be executed  coz js checks conditions sequentially  and the first one that  meets requrements will be exectued  </p>
+                        <p>
+                                Conditional (ternary) operator (this operator is frequently used as an alternative to an if...else statement): <strong>condition? if true : if false</strong></p>
+                </article>
+
+
+                <article>
+                        <h2>Loops</h2>
+                        <p> are used to repeat a block of code. For example, if you want to show a message 100 times. 
+                        How it works? If the condition is false, the for loop is terminated.
+                        If the condition is true, the block of code inside of the for loop is executed.</p>
+                        <p>loop is en event</p>
+                        <ol type="1" >
+                             <li > <strong>for</strong> </li>
+                            <li> for...in </li>
+                            <li> for.. of</li>
+                            <li>for... each</li>
+                            <li>  <strong>while</strong></li>
+                            <li> <strong>do... while</strong></li>
+                          
+                        </ol>
+                       
+                        <p>i  = means index , it´s a loops variable</p>
+                        <p>() inside is:  i value , condition, iteration: i++ or i-- /p>
+                        <p   class="pWithBottomMargin"> i++  (increment operator):  i++ evaluates to the previous value of i , and then i increases the value of the variable with 1. Makes sure the loop ends at some point. </p>
+
+                        <table   class=" loopTb pWithBottomMargin " >
+                                <caption>Difference between loop for & loop while</caption>
+                                <thead>
+                                <tr>
+                                        <th> for </th>
+                                        <th> while</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                        <td> when the number of iterations is known  ahead of time = precise n times  and loop stops --rigid syntax.</td>
+                                        <td>best when you don't know the number of iterations ahead of time. Loops are executed as long as the expression evaluates to true. -- looser syntax-- Warning: Infinite while Loop (means troubles): if the condition of a loop is always true, the loop runs for infinite times (until the memory is full).
+                                        </td>
+                                </tr>
+                                </tbody>
+                        </table>
+                
+
+                        <section  class="loopField pWithBottomMargin ">
+                                <p class="looperType" >   <strong>for</strong></p>
+                                <p>to execute code repeatedly</p>  
+                                The for loop requires following three parts:
+                                <ol type="1">
+                                        <li> Initializer: Initialize a counter variable to start with</li>
+                                        <li> Condition: specify a condition that must evaluate to true for next iteration</li>
+                                        <li>Iteration: increase or decrease counter</li>
+                                </ol>
+                                <p>syntax:  for(initializer; condition; iteration) { Code to be executed }  -->Ex: for(count=1; count < 10; count++) {
+                                        console.log(count);
+                                     }    </p>
+                                     <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/aluata/embed/preview/OJBVWbd?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                        See the Pen <a href="https://codepen.io/aluata/pen/OJBVWbd">
+                                        Untitled</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.
+                                      </iframe>
+
+        
+                               
+                        </section>
+
+
+                        <table   class=" loopTb pWithBottomMargin " >
+                                <caption class="headerCaption"  >Difference between loop for...in &  for...of: both loops can be used with Arrays and Strings   </caption>
+                                <thead>
+                                <tr>
+                                        <th> for (...in) </th>
+                                        <th> for(...of)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                        <td>loop over the enumerable properties of an object</td>
+                                        <td>only for...of loops iterate over the values in order </td>
+                                </tr>
+                                </tbody>
+                        </table>
+
+
+                        <section   class="loopField pWithBottomMargin "> 
+                                <p class="looperType" > <strong>for (...in)</strong></p> 
+                                <p>syntax: for (variable in object) {
+                                        // statements
+                                     }
+                                     </p>
+                                <p> iterates through the properties of an object;  each iteration returns a  <strong>key (x)</strong>). The key is used to access the value of the person[x]</p>
+                                <p>does not loop through all of the properties of the object. Only through the enumerable properties such as user-defined or inherited user-defined.</p>
+                               
+                                     <p>Break Statement :yes</p>
+                                     <iframe height="300" style="width: 100%;" scrolling="no" title="Loop :FOR ...IN " src="https://codepen.io/aluata/embed/preview/eYPNvVK?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                        See the Pen <a href="https://codepen.io/aluata/pen/eYPNvVK">
+                                        Loop :FOR ...IN </a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.
+                                      </iframe>
+                                
+                        </section>
+
+                
+
+                        <section  class="loopField  pWithBottomMargin">
+                                <p class="looperType" >  <strong>for (...of)</strong></p>
+                                <p>--> loops through an array and also sets, maps, strings </p>   
+                                <p>syntax: for every element in the object, run the body of the loop:  for (element of object) { // body of for...of }; </p>
+                                <iframe height="300" style="width: 100%;" scrolling="no" title="Loop: FOR ...OF " src="https://codepen.io/aluata/embed/preview/KKGpqRV?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                        See the Pen <a href="https://codepen.io/aluata/pen/KKGpqRV">
+                                        Loop: FOR ...OF </a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.
+                                      </iframe>
+
+                        </section>
+
+
+                        <section  class="loopField pWithBottomMargin ">
+                                <p class="looperType" >  <strong>for (...each)</strong>  </p>
+                                <p>execute the code  once for every element found in the array</p>
+                                <p>syntax: array.forEach(function(currentValue, index, arr))</p>
+                                <p>contains a for each method, this means that on any array, we can call forEach so</p>
+                                <iframe height="300" style="width: 100%;" scrolling="no" title="Loop: FOR ... EACH" src="https://codepen.io/aluata/embed/preview/MWPwvYo?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                        See the Pen <a href="https://codepen.io/aluata/pen/MWPwvYo">
+                                        Loop: FOR ... EACH</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.
+                                      </iframe>
+
+                        </section>
+
+                        <section class="loopField pWithBottomMargin ">
+                                <p class="looperType">  <strong>while</strong>  </p>
+                                <p> --> rybki w akwarium; stops completely the current loop & goes to the next one ex. 1 2 3 4 NO5 6 7 8 9  / can use break condition</p>
+
+                        </section>
+
+
+                        <section class="loopField  pWithBottomMargin ">
+                                <p class="looperType" >  <strong>do while </strong>   </p>
+                                <p> first is DO, then is WHILE ...  it evaluates condition expression after the execution of code block that´s why it will run at least one time ,  even the condition is false; similiar to while loop. Ex: let i = 0 ; while (i<0) --> it will go anyway one time. </p> 
+                                
+                               
+                             
+                             
+                        
+                        </section>
+
+
+
+                       
+
+
+                      
+
+                
+
+                </article>
+
+              
+              
+                
+
+
+        </section>
+
+
+        
+     
+       
+                
+               
+   
+
+   
+</body>
+
+<footer>
+ <p>Julia Lassen  </p>       
+</footer>
+
+
+
+
+</html>
+

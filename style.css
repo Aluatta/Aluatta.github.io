@@ -1,5 +1,4 @@
 :root{
-        
         /** spacing spacing spacing spacing  spacing spacing  spacing spacing  */
     --spaceDefault:1rem;
     --spaceXXSmal:calc(var(--spaceDefault)/2);
@@ -16,16 +15,17 @@
        --fontMMD: 5rem;
        --fontMMDFisrtPage:5.8rem;
        --fontMMDSecondPage: 5.2rem;
-       --fontBody:1.2rem;
+       --fontBody:1rem;
        --fontMobileBody:1.1rem;
        --fontHeaderPSignature:52px;
        --fontMedium:calc(var(--fontDefault)*2);
        --fontMini: calc(var(--fontDefault)/2);
        --fontHeader:1.5rem;
+       --pWithBottomMargin:2.5rem;
+     
+    
      
        
-
-    
 
         /** colors colors colors colors colors colors */
         --ModulOverskriftColorFont:#4E4E4E;
@@ -41,6 +41,7 @@
 
 *{
         box-sizing: border-box;
+        margin: 0;
 }
       
 
@@ -66,7 +67,7 @@ body{
       
 
 }
-ul,li {
+ul{
         list-style: none;
    
 }
@@ -75,7 +76,7 @@ ul{
 }
 
 .navbar{
-        padding-top: 4px;
+      align-self: center;
 }
 
 .navbar__list{
@@ -201,33 +202,36 @@ header{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+   
 
+}
+
+
+/** semseters4ikons site1----> site1---->semseters4ikons  site1---->semseters4ikons  */
+
+.semesters{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap:1rem;
+        white-space:normal ;
+        margin-bottom:var(--spaceXLarge) ;
        
 
 }
 
-
-/** site1---->semseters4ikons  site1---->semseters4ikons  site1---->semseters4ikons  */
-.læringsMateriale{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-margin-bottom: 5rem;
-background-color:#4E4E4E;
-padding-top: var(--spaceDefault);
-padding-bottom: var(--spaceDefault);
-border-radius: 10px;
-overflow-x: scroll;
-position: relative;
-
+.semesterLink{
+        width: calc(25%-1rem);
 
 }
+
 .semesterIkon{
-      border: #222 solid 1px;
-      border-radius: 6px;
-    
+        max-width: 100%;
+        border: solid  black 1px;
+        border-radius: 8px;
+ 
+      
 }
-
 .semesterIkon:hover{
         cursor: pointer;
         transition: all .4s linear;
@@ -252,23 +256,23 @@ position: relative;
 .semesterSecond{
         max-width: 70vw;
         align-self: center;
+        margin-bottom:var(--spaceXLarge) ;
       
         
 }
 .semesterIndication{
-    
         font-size:1.5rem;
         font-weight: 300;
         
        
 }
 .semesterIndication {
-       
         overflow: hidden;
         text-align: center;
         font-weight:300;
         color: #4E4E4E;
       }
+
 .semesterIndication:before, .semesterIndication:after {
         content: "";
         display: inline-block;
@@ -287,13 +291,8 @@ position: relative;
       
 .--mmd{
 text-align: center;
-
-
 }
 
-
-/* still site1 still site1 still site1 still site1 /
-/** attention-attnention!!! site doubling semester2 gallery!!!!!  */
 
 /** animated text multimediedesign source: trully mitttal , code pen */
 @keyframes multimedia {
@@ -341,14 +340,25 @@ text-align: center;
       .--mmd.--uiux{
     animation: none;
       }
-      
-
-
-
-
-
 /** ends animated text multimediedesign ends animated text multimediedesign ends animated text multimediedesign ends  */
 
+
+
+
+/** first semester mp4 -- first semester mp4 --first semester mp4  */
+.movieTitle{
+        text-align: center;
+}
+.videoField{
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--spaceLarge);
+}
+/** first semester video -ends here  */
+
+
+
+/** Hero Hero  Hero Hero Hero Hero Hero Hero Hero Hero */ 
 .--mmd2{
         font-size: var(--fontMMDSecondPage);
         text-align: center;
@@ -449,7 +459,7 @@ text-align: center;
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-/** site3-uxui site3-uxui site3-uxui site3-uxui site3-uxui site3-uxui site3-uxui site3-uxui */
+/** UI UX UI UX  UI UX  UI UX  UI UX  u UI UX  UI UX  UI UX  */
 
 .modul1{
         text-align: center;
@@ -458,7 +468,6 @@ text-align: center;
         color:#4E4E4E;
         text-shadow: 1px 1px 1px black;
         margin-bottom: .5rem;
-        margin-top:.5rem;
         padding-bottom: 4px;
         border-bottom: #4E4E4E 1px solid;
 
@@ -472,7 +481,7 @@ text-align: center;
 .--uiux {
         font-size: 1.2rem;
         text-align: center;
-        margin-bottom: 1.3rem;
+        margin-bottom: var(--spaceLarge);
 }
 
 .comparisonBlock{
@@ -610,16 +619,48 @@ gap:16px;
 }
 
 
-
-/** first semester mp4 -- first semester mp4 --first semester mp4  */
-.movieTitle{
+/** Gestalt  Gestalt Gestalt Gestalt Gestalt Gestalt Gestalt */
+.listGestaltRules{
         text-align: center;
+     
+     
 }
-.videoField{
+.example{
+        max-width: 100%;
+        margin-bottom: .5rem;
+}
+
+.box{
         display: flex;
-        justify-content: center;
-        margin-bottom: var(--spaceLarge);
+        flex-direction: column;
+
+   
 }
+.pWithBottomMargin{
+        margin-bottom: 2.5rem;
+}
+.exampleBottom{
+        margin-bottom: 5rem;
+}
+
+/**  to design too! */
+.box{
+        border-radius: 16px ;
+        padding: var(--spaceSmall) var(--spaceMedium);
+        border: #4E4E4E solid 1px;
+        margin-bottom: 2rem;
+        background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(204, 205, 206) 100.2%);
+      
+}
+.H3WithBottom{
+        margin-bottom: .5rem;
+        background: #4E4E4E;
+        padding: .7rem;
+        color: whitesmoke;
+}
+
+
+
 
 
 /** designSite  designSite  designSite designSite */
@@ -668,7 +709,8 @@ gap:16px;
         border: solid 1px var(--colorFontBody);
         max-width: 69vw;
         display: grid;
-       grid-template-columns: auto;
+        grid-template-columns: auto;
+        padding: 8px;
       /* background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #efeeee 26%, #efefef 48%, #d9d9d9 75%, #d7d5d5 100%);  */
      
      
@@ -688,12 +730,7 @@ padding-left: var(--spaceDefault);
 text-decoration: double  red;
 
 }
-.gestaltContainerPictures{
-     display: grid;
-     gap:var(--spaceDefault);
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-     
-}
+
 .exepmle{
         max-width: 70%;
 }
@@ -734,16 +771,161 @@ text-decoration: double  red;
         margin: 0;
 
 }
-.box{
-        border-radius: 16px ;
-        padding: var(--spaceSmall) var(--spaceMedium);
-        border: #4E4E4E solid 1px;
-        margin-bottom: 2rem;
-        background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(204, 205, 206) 100.2%);
+
+
+/**js-site  js js js js js js js js js */
+.looperType{ 
+        font-size: 3rem;
+}
+
+.--jsTagline{
+        margin-bottom: var(--spaceMedium);
+
+}
+.emsmall{
+        font-size: x-small;
+}
+
+.javaS{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 5rem;
+        font-size: var(--fontBody);
+        width: 75vw;}
+
+
+.functionsTypeField{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:var(--spaceMedium);
+        margin-bottom: var(--spaceLarge);
+
+   
+}
+#functionDefinition{
+       margin-bottom: var(--spaceLarge);
+
+}
+
+.arrowFunctionField{
+        margin-left: var(--spaceLarge);
+ 
+}
+.variableField{
+        margin-bottom: var(--spaceMediumPlus);
+}
+.datatypesField{  margin-bottom: var(--spaceMediumPlus);}
+.objectField{  margin-bottom: var(--spaceMediumPlus);
+}
+
+.listOrdered{
+list-style:disc;
+}
+.clickLink{
+        text-decoration: underline #fa911a9f ;
+        text-decoration-thickness:2 px;
+        color:black;
+     
+
+}
+.clickLink:hover{color:#fa911a ;
+        
+
+}
+.cp_embed_wrapper{
+        border: lightgray 2px solid;
+        margin-bottom: 3rem;
+}
+
+.photo{
+        max-width: 100%;
+        max-width: 50vh;
+        justify-content: center;
+}
+.--arrayPic{
+        max-width: 100%;
+        margin-bottom: 3rem;
+}
+.photoBox{
+padding-top: 2rem;
+display: flex;
+justify-content:space-evenly;
+margin-bottom: var(--spaceMedium);
+
+}
+
+.tbDOM {
+        width:100%;
+        border-collapse:collapse;
+        padding:5px;
+        border: lightgray 2px solid;
+}
+
+.tbDOM th {
+        border: lightgray 2px solid;
+        padding:5px;
+        background:rgba(0, 170, 255, 0.491);
+        text-align: center;
+}
+.tbDOM td {
+        border: lightgray 2px solid;
+        padding:5px;
+        color:#4E4E4E;
+        width: 50%;
+}
+.pWithXSmallMArgin{
+     margin-bottom: .5rem;
+}
+
+.queryBoxComparison{
+        display: flex;
+        flex-wrap: nowrap;
+        gap:1rem;
+        padding-top: 1rem;
+        justify-content: center;
+        text-align: center;
+        justify-self: center;
+}
+
+.iFrameStyling{
+        border: lightgray 2px solid;
+        margin-bottom: 3rem;
+
+}
+
+.loopField{
+        padding: 8px;
+        border-radius: 6px;
+        border: grey 2px solid;
+       box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+       /*background:linear-gradient(to right, #6a6b69, #e9f1e1, #dcdddb); !!! */
+      
+}
+
+.loopTb caption {
+        caption-side:top;
+        text-align:center;
+}
+.loopTb th {
+        border: lightgray 2px solid;
+    padding:5px;
+    background:rgba(0, 170, 255, 0.491);
+}
+.loopTb td {
+        border: lightgray 2px solid;
+padding:5px;
+color:#4E4E4E;
+width: 50%;
+}
+
+.headerCaption{
+        text-align: left;
 }
 
 
-
+/** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /** footer footer   */
 footer{
         color: rgb(71, 70, 70);
@@ -757,7 +939,6 @@ footer{
 }
 
 /** footer-ends  footer-ends  footer-ends  footer-ends */
-
 
 
 
@@ -841,18 +1022,7 @@ header{
 .--p1,.--p3,.--p2{
         display: none;
 }
-.læringsMateriale{
-        overflow-x: scroll;
-        background-color: inherit;
-        margin-bottom: var(--spaceDefault); 
-}
 
-
-/* didn´t work without this (!!!) added extra container: div (Jarne will not like it :( ) */
-.touchWrapperHelper {
-        white-space: nowrap;
-
-}   
 .introduction{
         display: grid;
         grid-template-columns: 1fr;
@@ -860,13 +1030,6 @@ header{
         margin-bottom: var(--spaceDefault);
         text-align: center;
 }
-.semesterIkon{
-        max-width: 100%;
-        border-radius: 6px;
-
-    
-}
-
 
 
 .--pMobile{
@@ -875,13 +1038,11 @@ header{
      
 }
 
-
-/*    doubling    when worikng on combining two versions */
-
 .headerStudyCourse{
         font-size: var(--fontMobileBody);
         text-align: center;
         font-weight: 100;
+        margin-bottom: var(--spaceAfterSmall);
 
 }
 .semesterSecond{
@@ -894,13 +1055,33 @@ header{
 /*.text.--mmd{
         font-size: 2rem;
         text-align: center;
-      
 }*/
-
 
 .--mmdmobile{
         display: none;
 }
+
+
+/** 4semester-4 ikons  */
+.semesters{
+        display: flex;
+        position: relative;
+        overflow-x: scroll;
+        margin-bottom: 1rem;
+        
+        }
+        .semesterLink{
+                width:70% ;
+                flex: 1 0 auto;
+        }
+        .semesterIkon{
+              border: #222 solid 1px;
+              border-radius: 6px;
+              max-width: 100%;
+              margin-bottom: var(--spaceDefault);
+        }
+/** 4 semesters section ends!4 semesters section ends!4 semesters section ends! */
+
 
 .semesterIndication{
         margin-top: 2rem;
@@ -908,7 +1089,6 @@ header{
         font-size: var(--fontMobileBody);
         font-weight: 100;
         color:#4E4E4E;
-
        
 }
 
@@ -1049,25 +1229,52 @@ overflow-x: scroll;
 .introHeadingModul{
         margin: 0;
 }
-.authorUndeplaced{
-        margin: 0;
-        margin-bottom: 1rem;
-}
-.overskrift.--mmd.--uiux.--citat{
-        margin: 0;
-}
 
+.sliderWrapper{
+        margin-bottom: var(--spaceSmall);
+}
 .slide{
         max-width: 100%;
         margin-bottom: var(--spaceDefault);
       
-     
-
 }
+
 .box{
         padding-left:8px;
         padding-right: 8px;
 }
+
+
+/*** mobile: javascrip-site  */
+.javaS{
+        text-align: left;
+        font-size: .8rem;
+}
+
+.looperType{
+        font-size: 2rem;
+}
+.functionsTypeField{
+        display: flex;
+        flex-direction: column;
+}
+.photoBox{
+        display: flex;
+        flex-direction: column;
+
+}
+.photo2{
+        padding-top: var(--spaceMedium);
+}
+.queryBoxComparison{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+}
+.iFrameStyling{
+        margin-bottom: 0;
+}
+
 
 /**  mp4Semester1 mp4Semester1mp4Semester1mp4Semester1mp4Semester1mp4Semester1 */
 #video{
@@ -1077,6 +1284,8 @@ overflow-x: scroll;
 }
 
 
+
+
 /** fffffffooter   fffffooter  */
 footer{
         max-width: 100%;
@@ -1084,5 +1293,5 @@ footer{
         color:whitesmoke;
         background-color:#4E4E4E;
         border-top: none;
-}
-}
+}}
+
