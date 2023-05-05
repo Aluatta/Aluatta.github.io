@@ -192,21 +192,57 @@
 
                 <article class="">
                         <h2>Dom Queries </h2>
-                        <p>are the methodes that are called on the DOM to select/return one/more of elements  represented in the DOM query. the returrnered element is then free to be used by a programming language.</p>
-                        <p> querySelector lægge i vores RAM;  <strong>querySelector </strong> --> returnerrer en Node; <strong>querySelectorALL</strong>  --> returnerrer flere Nodes</p>
-                        <p>script need to be able to access the content of document and  to know when the user is interacting with it. This communication  is carried out     with help of methodes, events, propertires in the interface called DOM :) </p>
-                        <strong>DOM: Document Object Model</strong>
-                        <p> is a nodes tre-like representation of HTML Doc (markup-based resource) loded in browser.The DOM is an API for accessing and manipulating documents what allows  me to interact  with a website using js </p>
-                        <p>  DOM renders the page (HTML: text from editor) in the browser as a tree of objects  so that java script, can play with it.  In other words when the static assets  (HTML and CSS) are loaded  on the site - the DOM is created - and js sees the TREE! which allows js ( and any scripts) to run on that page manipulating not the HTML and CSS , but the <strong> browser’s interpretation</strong> of that information (the DOM)</p>
-                        <p>is representation of  whole HTML elements that make up web page (are loaded in browser)</p>
-                        <p>it´s a root element;</p>
-                        <p>with help of DOM we can add dynamic content to a webpage - we can access & change the content of doc. by its methodes (doc. is root element thet represents HTML doc.) </p>
+                        <p>are the methodes that are called on the DOM to select/return one/more elements  represented in the DOM query (baza danych). The returrnered element is then free to be used by JS.</p>
                         
+                        <p   class="pWithXSmallMArgin">JS needs to to know when the user is interacting with content and be able to access it. This communication  is possible with help of methodes, events, properties in the interface called DOM <br> The DOM is an API for accessing and manipulating HTML elements </p>
+                        
+                        <strong>DOM: Document Object Model</strong>
+                        <p> is a representation of  all HTML elements (markup-based resource) that make website in  form of tre-like object nodes loded in browser.  </p>
+                        <p> Browser parses HTML and generets DOM. <br> DOM stores  all the HTML elements and attributes  in form of OBJECTS - tree of nodes. <br>
+                        Each object is created with its own property.<br>Updating any property of object in DOM will update that attribute value in HTML. <br>
+                       PROPERTIES  are formend  when the browswer parses  the HTML  and generates the DOM  <br>
+
+                        In other words when the static assets  (HTML and CSS) are loaded  in the site - the DOM is created - and JS sees the TREE! which allows JS to run on that page and manipulating not the HTML and CSS , but the <strong>     <span style="color: deeppink;">  browser’s interpretation </span> </strong> of that information (the DOM)</p>
+                        <p>it´s a root element;</p>
+                        <p class="pWithXSmallMArgin" >with help of DOM we can add dynamic content to a webpage - access & change the content of doc. by its methodes</p>
+                        <H4>How DOM works</H4>
+                        <p class="pWithXSmallMArgin">Document Object Model is build-in object, thas has many properties  and methodes that we can use to manipulate  the content, the stucture  and  the style of a website. Almost any time a website peforms an action such a : 
+                                toggling a navigation manu , or rotating  bertween slide show images, or displaying an error  when user attempts tu submit an incomplete form --> this is a result of JS & manipulation The DOM 
+                        </p>
+                        
+
+                        <p style="color: darkgray;"  class="pWithBottomMargin"><em>Tak JS widzi HTML, czyli to, co sobie napiszew edytorze  np VSC. Przegladarka  czyta sobie moj tekst i  odpowiednio przetwarza go na drzewko z nodes</em> -----> ANG: Browser parses HTML and generates the DOM. When DOM converts HTML elements and attributes in OBJECT, than each OBJECT IS CREATED WITH ITS OWN PROPERTY.  
+                                That´s  why updating any property of object in DOM will update that attribute value in HTML.  </p>
+                               
                         <figure class="photoBox" >
                                 <img class="photo" src="images/dom1a.jpeg" alt="dom tree ">
                                 <img class="photo photo2"   src="images/dom2.gif" alt="dom tree">
                         </figure>
-                        <p class="pWithBottomMargin"><em>js widzi tak strukture elementów  html na  wczytanej stronie - oczami Javy S. ha ha! To, co sobie pisze tzn. tekst w HTMLu w edytorze , zostaje  nastepnie przedstawione w postaci modelu obiektowego pamieci komp.  czyli przegladarka  czyta sobie moj tekst i  odpowiednio przetwarza go na drzewko.</em></p>
+                        <p><strong>NODE(S)</strong></p>
+                        <p>Diagram DOM Tree is type of nodes:
+                                <ol type="1"  class="nodesList" >
+                                        <li>element nodes </li>
+                                        <li>attributes nodes</li>
+                                        <li>text nodes</li>
+
+                                </ol>
+                                even line breaks and are considered nodes! Most of these nodes have parent, child , siblings relationship
+                        </p>
+                        <p></p>
+                        <p> some of the nodes in a tree can have children, while others are always leaves; </p>
+                     
+                        <p><strong>Nodes relationship structure:</strong></p>
+
+                        <ol class="pWithBottomMargin"  >
+                                <li class="List listOrdered " >child node</li>
+                                <li class="List listOrdered " >first child </li>
+                                <li class="List listOrdered " >last child</li>
+                                <li class="List listOrdered " >parent node</li>
+                                <li class="List listOrdered " >next sibling</li>
+                                <li  class="List listOrdered " >previuos sibling</li>
+
+                        </ol  >
+                        <p class="pWithBottomMargin">  <strong>.closest</strong> moves downwards, selects the closest parent element, that has this . selector ;   parent[0] this is the first parent</p>
 
                      
                         <table class="tbDOM pWithBottomMargin">
@@ -247,43 +283,29 @@
                                 </tr>
                                 <tbody>
                         </table>
-                        <p>How DOM works</p>
+                      
+
+
+                
+
                         <p class="codepen" data-height="180" data-theme-id="light" data-default-tab="js" data-slug-hash="yLRywEV" data-preview="true" data-user="aluata" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                                 <span>See the Pen <a href="https://codepen.io/aluata/pen/yLRywEV">
                                 Untitled</a> by julia (<a href="https://codepen.io/aluata">@aluata</a>)
                                 on <a href="https://codepen.io">CodePen</a>.</span>
                               </p>
                               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                        <p><strong>NODE(S)</strong></p>
-                        <p>nodes participate in a DOM tree  and nodes tree is expressed as a relationship between a node and its potential children</p>
-                        <p>abstract class , objects</p>
-                        <p> some of the nodes in a tree can have children, while others are always leaves; </p>
-                        <p>Document, Element , DocumentType</p>
-                        <p><strong>NODES LIST:</strong></p>
-
-                        <ol>
-                                <li class="List listOrdered " >child node</li>
-                                <li class="List listOrdered " >first child </li>
-                                <li class="List listOrdered " >last child</li>
-                                <li class="List listOrdered " >parent node</li>
-                                <li class="List listOrdered " >next sibling</li>
-                                <li  class="List listOrdered " >previuos sibling</li>
-
-                        </ol>
-
-
-                        
-
-
-                        <p class="pWithBottomMargin">  <strong>.closest</strong> moves downwards, selects the closest parent element, that has this . selector ;   parent[0] this is the first parent</p>
-
+                       
                         <p  >Various methodes to make DOM Query: 
-                                <a class="clickLink"  href="https://monsterjs.com/"> game</a>
-                                <p>-->getElementById("id") ; getElementsByTagName("tag-name"); getElementsByClassName("class-name") </p> 
-                                <ul>
-                                        <li><strong>-->querySelector ()</strong>: this method returns the first element within the document that matches the selector. It returns a single element.</li>
-                                        <li>  <strong> -->querySelectorALL ()</strong>: returns a nodelist thus the list of the document’s elements that match the given selector(s). Can return one or many selectors. </li>
+                                <a  class="clickLink"  href="https://monsterjs.com/"> <span style="color: darkgreen;"> U can learn by playing this game: </span> CLICK</a>
+                              
+                                <ul class="pWithBottomMargin">querySelector lægge i vores RAM
+                                        <li><strong>-->querySelector ()</strong>: this method returns the first element (altså  returnerrer en node) within the document that matches the selector. It returns a single element.</li>
+                                        <li>  <strong> -->querySelectorALL ()</strong>: returns a <strong>nodelist (returnerrer List Nodes)</strong>  thus the list of the document’s elements that match the given selector(s). </li>
+                                        <li>
+                                        --> old style: getElementById("id") Ican access using querySelector , how it works fx: <strong>document.querySelector ("#elementIWantFind"); </strong>; getElementsByTagName("tag-name"); getElementsByClassName("class-name") </p> 
+                                        </li>
                                 </ul>   </p>
+                            
 
                                 <section class="queryBoxComparison">
                                         <iframe class="iFrameStyling"   height="200" style="width: 100%;" scrolling="no" title="querySelector" src="https://codepen.io/aluata/embed/preview/ZEqYdaB?default-tab=js&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
@@ -354,7 +376,31 @@
                                 </tr>
                                 </tbody>
                         </table>
-                
+
+                        <table   class=" loopTb pWithBottomMargin " >
+                                <caption>Difference between loop for...in &  for...of: both loops can be used with Arrays and Strings </caption>
+                                <thead>
+                                <tr>
+                                        <th>for (...in)  </th>
+                                        <th> for(...of)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                        <td>loop over the enumerable properties of an object:lorem </td>
+                                        <td>only for...of loops iterate over the values in order
+                                        </td>
+                                </tr>
+                                </tbody>
+                        </table>
+
+
+
+
+
+
+
+
 
                         <section  class="loopField pWithBottomMargin ">
                                 <p class="looperType" >   <strong>for</strong></p>
@@ -379,21 +425,7 @@
                         </section>
 
 
-                        <table   class=" loopTb pWithBottomMargin " >
-                                <caption class="headerCaption"  >Difference between loop for...in &  for...of: both loops can be used with Arrays and Strings   </caption>
-                                <thead>
-                                <tr>
-                                        <th> for (...in) </th>
-                                        <th> for(...of)</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                        <td>loop over the enumerable properties of an object</td>
-                                        <td>only for...of loops iterate over the values in order </td>
-                                </tr>
-                                </tbody>
-                        </table>
+                       
 
 
                         <section   class="loopField pWithBottomMargin "> 

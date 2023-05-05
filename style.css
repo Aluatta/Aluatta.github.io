@@ -837,7 +837,7 @@ text-decoration: double  red;
 list-style:disc;
 }
 .clickLink{
-        text-decoration: underline #fa911a9f ;
+        text-decoration: underline #fa911a9f 3px ;
         text-decoration-thickness:2 px;
         color:black;
      
@@ -870,7 +870,7 @@ margin-bottom: var(--spaceMedium);
 }
 
 .tbDOM {
-        width:100%;
+        width:100% ;
         border-collapse:collapse;
         padding:5px;
         border: lightgray 2px solid;
@@ -892,6 +892,25 @@ margin-bottom: var(--spaceMedium);
      margin-bottom: .5rem;
 }
 
+.loopTb{ width:75vw;   /** added !!!!! */
+
+}
+.loopTb caption {
+        caption-side:top;
+        text-align:center;
+}
+.loopTb th {
+        border: lightgray 2px solid;
+    padding:5px;
+    background:rgba(0, 170, 255, 0.491);
+}
+.loopTb td {
+        border: lightgray 2px solid;
+padding:5px;
+color:#4E4E4E;
+width: 50%;
+}
+ 
 .queryBoxComparison{
         display: flex;
         flex-wrap: nowrap;
@@ -917,21 +936,6 @@ margin-bottom: var(--spaceMedium);
       
 }
 
-.loopTb caption {
-        caption-side:top;
-        text-align:center;
-}
-.loopTb th {
-        border: lightgray 2px solid;
-    padding:5px;
-    background:rgba(0, 170, 255, 0.491);
-}
-.loopTb td {
-        border: lightgray 2px solid;
-padding:5px;
-color:#4E4E4E;
-width: 50%;
-}
 
 .headerCaption{
         text-align: left;
